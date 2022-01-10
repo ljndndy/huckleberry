@@ -9,4 +9,90 @@ body {
   padding: 0;
 }
 
+:root {
+  --font-size-1: 1rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1.5rem;
+  --font-size-4: 2rem;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+
+  --color-grey-0: hsl(0deg, 0%, 0%);
+  --color-grey-1: hsl(0deg, 0%, 10%);
+  --color-grey-2: hsl(0deg, 0%, 30%);
+  --color-grey-3: hsl(0deg, 0%, 40%);
+  --color-grey-4: hsl(0deg, 0%, 60%);
+  --color-grey-5: hsl(0deg, 0%, 100%);
+
+  --color-black: var(--color-grey-0);
+  --color-white: var(--color-grey-5);
+
+}
+
 /* Add styles here! */
+
+body {
+  background-color: var(--color-grey-4);
+}
+
+.max-width-wrapper {
+  padding: 0 var(--space-3);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: var(--space-4);
+  font-size: var(--font-size-4);
+}
+
+h2 {
+  font-size: var(--font-size-3);
+}
+
+p {
+  margin-block-start: var(--space-2);
+  margin-block-end: var(--space-2);
+}
+
+strong {
+  color: var(--color-primary);
+}
+
+header, section {
+  background-color: var(--color-white);
+  border-block-end: var(--space-1) solid var(--color-grey-3);
+}
+
+header {
+  margin-block-end: var(--space-6);
+}
+
+.intro-chunk {
+  padding: var(--space-7) 0 var(--space-6);
+}
+
+.indented-heading {
+    width: fit-content;
+    padding: var(--space-2) var(--space-4);
+    background-color: var(--color-secondary-light);
+    border-bottom: var(--space-1) solid var(--color-secondary-dark);
+    margin-left: calc(-1 * var(--space-4));
+    margin-top: 0;
+}
+
+.card {
+  padding-block-start: var(--space-1);
+}
